@@ -1,6 +1,6 @@
 # pa
 
-[![build status](https://secure.travis-ci.org/hereandnow/node-pa.png)](http://travis-ci.org/hereandnow/node-pa)
+[![Build Status](https://travis-ci.org/hereandnow/node-pa.png?branch=master)](https://travis-ci.org/hereandnow/node-pa)
 
 Pa is a command-line tool for reading and writing properties of your package.json
 

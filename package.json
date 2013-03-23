@@ -1,0 +1,45 @@
+{
+  "name": "pa",
+  "description": "Pa is a command-line tool for reading and writing properties of your package.json",
+  "version": "0.1.0",
+  "homepage": "http://hereandnow.github.com/node-pa/",
+  "author": {
+    "name": "Bastian Behrens",
+    "email": "hereandnow78@googlemail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hereandnow/node-pa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hereandnow/node-pa/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/hereandnow/node-pa/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/index",
+  "bin": "bin/pa",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "dependencies": {
+    "optimist": "~0.3.5",
+    "colors": "~0.6.0-1"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt": "~0.4.0"
+  },
+  "keywords": [
+    "pa",
+    "package.json"
+  ]
+}

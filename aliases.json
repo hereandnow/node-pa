@@ -1,0 +1,10 @@
+{
+  "v": "version",
+  "k": "keywords",
+  "h": "homepage",
+  "n": "name",
+  "a": "author",
+  "dep": "dependencies",
+  "devdep": "devDependencies",
+  "desc": "description"
+}

@@ -30,7 +30,8 @@
   },
   "dependencies": {
     "optimist": "~0.3.5",
-    "colors": "~0.6.0-1"
+    "colors": "~0.6.0-1",
+    "mkdirp": "~0.3.5"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.1.1",

@@ -1,8 +1,6 @@
 'use strict';
 
-var fs = require('fs'),
-    path = require('path'),
-    alias;
+var fs = require('fs');
 
 
 exports['alias-test'] = {
@@ -39,7 +37,7 @@ exports['alias-test'] = {
       "a2": "alias2"
     };
     test.expect(1);
-    test.equal(alias.trigger({alias:'a2', _: []}), "\u001b[32malias2\u001b[39m", 'returned content is the alias for a2');
+    test.equal(alias.trigger({alias:'alias2', _: []}), "\u001b[32ma2\u001b[39m", 'returned content is the alias for a2');
     test.done();
   },
 
@@ -51,10 +49,10 @@ exports['alias-test'] = {
       "a2": "alias2"
     };
     test.expect(3);
-    test.equal(alias.trigger({alias:'a3', _: []}), "\u001b[31mno alias for \'a3\'\u001b[39m", 'alias3 does not exist');
-    var result = alias.trigger({alias:'a3', _: ['alias3']});
-    test.equal(alias.trigger({alias:'a3', _: ['alias3']}), "\u001b[32mset alias \'a3\' for \'alias3\'\u001b[39m", 'alias3 does not exist');
-    test.equal(alias.trigger({alias:'a3', _: []}), "\u001b[32malias3\u001b[39m", 'returned content is the alias for a3');
+    test.equal(alias.trigger({alias:'alias3', _: []}), "\u001b[31mno alias for \'alias3\'\u001b[39m", 'alias3 does not exist');
+    alias.trigger({alias:'a3', _: ['alias3']});
+    test.equal(alias.trigger({alias:'alias3', _: ['a3']}), "\u001b[32mset alias \'a3\' for \'alias3\'\u001b[39m", 'alias3 was set');
+    test.equal(alias.trigger({alias:'alias3', _: []}), "\u001b[32ma3\u001b[39m", 'returned content is the alias for a3');
     test.done();
   }
 

@@ -1,7 +1,7 @@
 {
   "name": "pa",
   "description": "Pa is a command-line tool for reading and writing properties of your package.json",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "http://hereandnow.github.com/node-pa/",
   "author": {
     "name": "Bastian Behrens",

@@ -93,6 +93,9 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+- 0.1.1
+  - fix setting with alias
+
 - 0.1.0
   - Initial Commit
 
